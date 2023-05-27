@@ -3,8 +3,8 @@ Database design of a school management system-- Students can move to different y
 
 
 #### Design app: **lucid.app**
-- [Database design link](https://lucid.app/lucidchart/4a6e4e9a-f762-4ad0-8e10-a650465b0713/edit?beaconFlowId=0BDBC2A396664A3C&page=0_0&invitationId=inv_b1a1a729-c7da-4eab-865f-ccd5780a418b#)
-- [Youtube tutorial](https://www.youtube.com/watch?v=7Ck8wSoKJXI](https://www.youtube.com/watch?v=1YPT6VH256w)
+- [Database design link](https://lucid.app/lucidchart/4a6e4e9a-f762-4ad0-8e10-a650465b0713/edit?beaconFlowId=0BDBC2A396664A3C&invitationId=inv_b1a1a729-c7da-4eab-865f-ccd5780a418b&page=0_0#)
+- [Youtube tutorial](https://www.youtube.com/watch?v=1YPT6VH256w)
 
 ### Database requirements
 
