@@ -26,3 +26,39 @@ Database design of a school management system-- Students can move to different y
 ##### 4. A year has multiple terms, which have start and end dates. There is no specific number of terms that are required for a year.
 - create a table name called "term"
 ---
+##### 5. Students are enrolled in one year level at a time, and can move up to the next year level in the future. A year level could be kinder, grade 1,2,3 and so on.
+- create a table name called "year_level"
+- create a join table called "student_year_level" - **many to many relationship** - link student and year_level tables(one student can have many year levels, and one level can have many students
+---
+##### 6. Students are part of classes, and can be in more than one class at a time.
+- create a table name called "class"
+- create a join table called "student_class" - **many to many relationship** - link student and class tables(one student can have many clases, and one class can have many students
+---
+##### 7. A class has a subject, such as Sport, or Physics. A class subject may be a more general name for the junior years.
+- create a table name called "subject"
+- the relation between "subject" and "class" is **one to many**, one subject can have many classes
+---
+##### 8. Subject belong to departments.For example, Physics and Chemistry belong to the Science department.
+- create a table name called "department"
+- the relation between "department" and "subject" is **one to many**, one department can have many subjects
+---
+##### 9. A class is taught by a teacher,and teachers have names, genders and contact information
+- create a table name called "teacher"
+- the relation between "teacher" and "class" is **one to many**, one teacher can have many classes
+---
+##### 11. A class exsits for a term. There can be multiple classes in a year, and multiple classes within the same term(e.g. if there is a large number of English students and they need to split the class into two).
+- add a new column in a "class" table called "term_id" to link term table
+- the relation between "term" and "class" is **one to many**, one term can have many classes
+---
+##### 12. Classes are held in a classroom. A classroom can be a certain type of room, such as a gym or computer room or regular room. A classroom has a name that could include the location, and the capacity or number of students it can hold
+- create a table name called "classroom"
+- create a table name called "classroom_type"
+- the relation between "classroom_type" and "classroom" is **one to many**, one classroom_type can have many classrooms
+- the relation between "classroom" and "class" is **one to many**, one classroom can have many classes in a different times
+---
+##### 13. The time that a class occurs is called a period. There are a certain number of periods per day, and the periods are set for the entire school each year.
+-  create a table name called "period"
+-  the relation between "school_year" and "period" is **one to many** one school year can have many periods
+
+
+
