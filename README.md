@@ -59,6 +59,15 @@ Database design of a school management system-- Students can move to different y
 ##### 13. The time that a class occurs is called a period. There are a certain number of periods per day, and the periods are set for the entire school each year.
 -  create a table name called "period"
 -  the relation between "school_year" and "period" is **one to many** one school year can have many periods
-
-
+---
+##### 14. A class can occur over multiple periods, which could be two periods or up to the entire day
+-  add two columns in to "class" table called "start_period_id" and "end_period_id"
+---
+##### 15. Students are garded based on their work in each class and given a score between 0 and 100. This score is stored for each class and a calculation is done to determine their overall socore for the year.
+ - add a new columns in to "student_class" table called "score" - to get each score for each student 
+ - add a new columns in to "student_year_level" table called "score" - to student of each school level and each school year
+---
+##### 16. The score can be matched to a letter grade. For example, a score of 0-50 means an "F", from 51 to 60 means a "D" and so on , up to 100.
+- create a table name called "score_range"
+- not related to any tables, it can be by joins or granter than or less operators 
 
